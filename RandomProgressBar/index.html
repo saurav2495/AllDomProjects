@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      body {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #container {
+        padding: 30px 20px;
+        width: 300px;
+        border-radius: 15px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 35px;
+      }
+      #progress {
+        height: 15px;
+        border-radius: 30px;
+        background-color: rgb(215, 215, 215);
+      }
+      #growth {
+        width: 0%;
+        height: 100%;
+        background-color: green;
+        border-radius: 30px;
+      }
+      #Event {
+        display: flex;
+        justify-content: space-between;
+      }
+      #Event button {
+        padding: 10px 20px;
+        border-radius: 7px;
+        border: none;
+        background-color: green;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      #Event button:active {
+        scale: 0.95;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="progress">
+        <div id="growth"></div>
+      </div>
+      <div id="Event">
+        <h1>0%</h1>
+        <button>Click</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: purple;
+}
+.card {
+  background: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  border-radius: 18px;
+  gap: 20px;
+  text-align: center;
+}
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+}
